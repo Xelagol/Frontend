@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lagoona</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <div class="header-top-line">
+      <div class="header-top-line flex">
         <a class="header-logo">
           <img class="header-logo" src="img/main-logo.svg" alt="Lagoona logo">
         </a>
@@ -21,15 +21,15 @@
             +7&nbsp;495 322-54-48
           </a>
         </address>
-        <a class="header-sign-up" href="#">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="header-sign-up flex" href="#">
+          <svg class="header-sign-up-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z" fill="#CC9933"></path>
           </svg>
           Личный кабинет</a>
       </div>
-      <div class="header-nav">
+      <div class="header-nav flex">
         <nav>
-          <ul class="reset-list header-list">
+          <ul class="list-reset header-list flex">
             <li class="header-list-item">
               <a class="header-link" href="#about-us">О&nbsp;нас</a>
             </li>
@@ -50,9 +50,9 @@
             </li>
           </ul>
         </nav>
-        <div class="header-button">
-          <a class="button header-button" href="#">Хочу тур</a>
-          <button class="button header-button">Обратный звонок</button>
+        <div class="header-buttons">
+          <a class="button header-button header-buttons-link" href="#">Хочу тур</a>
+          <button class="button btn-reset header-button">Обратный звонок</button>
         </div>
       </div>
     </div>
@@ -64,13 +64,13 @@
         Lagoona - сеть отелей
       </h1>
     </div>
-    <section class="special-offer" id="special-offer">
+    <section class="section-offset special-offer" id="special-offer">
       <div class="container">
         <div class="special-offer-part">
           <h2 class="section-title special-title">Спецпредложения</h2>
-          <div class="special-offer-content">
-            <div class="special-offer-column">
-              <article class="special-offer-column-cell">
+          <div class="special-offer-content flex">
+            <div class="special-offer-column flex">
+              <article class="special-offer-column-cell flex padding-offset">
                 <h3 class="special-offer-column-cell-title">
                   Мальдивские острова
                 </h3>
@@ -80,7 +80,7 @@
                 <a class="link-arrow special-offer-item-cell-link" href="#">Подробнее</a>
               </article>
 
-              <article class="special-offer-column-cell">
+              <article class="special-offer-column-cell flex padding-offset">
                 <h3 class="special-offer-column-cell-title">
                   Горящий тур на&nbsp;остров Крит
                 </h3>
@@ -91,15 +91,17 @@
               </article>
             </div>
 
-            <div class="special-offer-column">
-              <article class="special-offer-column-cell special-offer-column-cell-big">
+            <div class="special-offer-column-right padding-offset">
+              <article class="special-offer-column-right-cell flex">
                 <h3 class="special-offer-column-cell-title special-offer-column-cell-title-big">
                   Номера категории люкс
                 </h3>
                 <span class="special-offer-price special-offer-price-big">
                   от&nbsp;5&nbsp;000&nbsp;₽
                 </span>
-                <a class="link-arrow special-offer-item-cell-link" href="#">Подробнее</a>
+                <a class="link-arrow special-offer-item-cell-link" href="#">
+                  Подробнее
+                </a>
               </article>
             </div>
           </div>
@@ -107,63 +109,63 @@
       </div>
     </section>
 
-    <section class="about-us" id="about-us">
+    <section class="section-offset about-us" id="about-us">
       <div class="container">
         <h2 class="section-title about-us-title">О&nbsp;нас</h2>
-        <p class="text">
+        <p class="text about-us-text">
           Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура организации влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а&nbsp;также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и&nbsp;уточнения существенных финансовых и&nbsp;административных условий.
         </p>
       </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="section-offset services" id="services">
       <div class="container">
         <h2 class="section-title services-title">Услуги</h2>
-        <ul class="reset-list services-list">
+        <ul class="list-reset services-list flex">
           <li class="services-item">
             <div class="services-item-blog">
-              <h3>
-                <a class="link-arrow services-item-blog" href="#">
+              <h3 class="services-item-blog-title text">
+                <a class="link-arrow services-item-blog-link" href="#">
                   Эксклюзивное обслуживание
                 </a>
               </h3>
-              <p class="text">
+              <p class="text services-item-blog-text">
                 Равным образом постоянный количественный рост и&nbsp;сфера нашей активности
               </p>
             </div>
           </li>
           <li class="services-item">
             <div class="services-item-blog">
-              <h3>
-                <a class="link-arrow services-item-blog" href="#">
+              <h3 class="services-item-blog-title text">
+                <a class="link-arrow services-item-blog-link" href="#">
                   Аренда банкетных залов
                 </a>
               </h3>
-              <p class="text">
+              <p class="text services-item-blog-text">
                 Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм
               </p>
             </div>
           </li>
           <li class="services-item">
             <div class="services-item-blog">
-              <h3>
-                <a class="link-arrow services-item-blog" href="#">
+              <h3 class="services-item-blog-title text">
+                <a class="link-arrow services-item-blog-link" href="#">
                   Сауны, бассейны, бани, фитнес-залы
                 </a>
               </h3>
-              <p class="text">
+              <p class="text services-item-blog-text">
                 Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
               </p>
             </div>
           </li>
           <li class="services-item">
             <div class="services-item-blog">
-              <h3>
-                <a class="link-arrow services-item-blog" href="#">
+              <h3 class="services-item-blog-title text">
+                <a class="link-arrow services-item-blog-link" href="#">
                   Охраняемые автомобильные стоянки
                 </a>
               </h3>
-              <p class="text">
+              <p class="text services-item-blog-text">
                 Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции
               </p>
             </div>
@@ -172,47 +174,47 @@
       </div>
     </section>
 
-    <section class="advantages" id="advantages">
+    <section class="section-offset advantages" id="advantages">
       <div class="container">
         <h2 class="section-title advantages-title">Преимущества</h2>
-        <ul class="reset-list advantages-list">
-          <li class="advantages-item advantages-image-1">
-            <p class="text">
+        <ul class="list-reset advantages-list flex">
+          <li class="advantages-item padding-offset advantages-image-1">
+            <p class="text advantages-item-text">
               Идейные соображения высшего порядка, а&nbsp;также постоянный количественный рост
             </p>
           </li>
-          <li class="advantages-item advantages-image-2">
-            <p class="text">
+          <li class="advantages-item padding-offset advantages-image-2">
+            <p class="text advantages-item-text">
               Значимость этих проблем настолько очевидна, что вопрос остаётся открытым
             </p>
           </li>
-          <li class="advantages-item advantages-image-3">
-            <p class="text">
+          <li class="advantages-item padding-offset advantages-image-3">
+            <p class="text advantages-item-text">
               Таким образом реализация плановых заданий играет важную роль для понимания
             </p>
           </li>
-          <li class="advantages-item advantages-image-4">
-            <p class="text">
+          <li class="advantages-item padding-offset advantages-image-4">
+            <p class="text advantages-item-text">
               Повседневная практика показывает, что сложившаяся структура организации
             </p>
           </li>
-          <li class="advantages-item advantages-image-5">
-            <p class="text">
+          <li class="advantages-item padding-offset advantages-image-5">
+            <p class="text advantages-item-text">
               Равным образом рамки и&nbsp;место обучения кадров способствует подготовки сотрудника
             </p>
           </li>
-          <li class="advantages-item  advantages-image-">
-            <p class="text">
+          <li class="advantages-item padding-offset advantages-image-">
+            <p class="text advantages-item-text">
               Консультация с&nbsp;активом влечёт за&nbsp;собой процесс внедрения услуг нашего сервиса
             </p>
           </li>
-          <li class="advantages-item advantages-image-7">
-            <p class="text">
+          <li class="advantages-item padding-offset advantages-image-7">
+            <p class="text advantages-item-text">
               Повседневная практика показывает, что дальнейшее развитие различных
             </p>
           </li>
-          <li class="advantages-item advantages-image-8">
-            <p class="text">
+          <li class="advantages-item padding-offset advantages-image-8">
+            <p class="text advantages-item-text">
               Значимость этого настолько очевидна, что консультация наших экспертов помогает
             </p>
           </li>
@@ -220,18 +222,20 @@
       </div>
     </section>
 
-    <section class="accommodation" id="accommodation">
+    <section class="section-offset accommodation" id="accommodation">
       <div class="container">
         <h2 class="section-title accommodation-title">Размещение</h2>
-        <ul class="reset-list accommodation-list">
+        <ul class="list-reset accommodation-list flex">
           <li class="accommodation-item">
             <article class="accommodation-hotel">
               <img class="accommodation-hotel-image" src="img/Lagoona_espanola.jpg" alt="Lagoona española">
               <div class="accommodation-blog">
-                <div class="accommodation-price">
-                  <span class="accommindation-price-text">от</span>
-                  <span class="accommondation-price-cost">4698</span>
-                  <span class="text">/ ночь</span>
+                <div class="accommodation-price flex">
+                  <div class="accomondation-price-subject">
+                    <span class="accommindation-price-text accommindation-offset">от</span>
+                    <span class="accommondation-price-cost accommindation-offset">4698</span>
+                    <span class="text">/ ночь</span>
+                  </div>
                   <div class="accommondation-rating">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt="Rate 4 of 5 stars">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
@@ -240,15 +244,17 @@
                     <img class="accommondation-rating-star" src="img/star-empty.png" alt>
                   </div>
                 </div>
-                <h3 class="accommodation-hotel-title">
-                  Lagoona espa&ntilde;ola
-                </h3>
-                <span class="accommodation-address">
-                  Барселона, Испания
-                </span>
-                <a class="accommodation-rooms-link" href="#">
-                  Номера
-                </a>
+                <div class="accomondation-hotel-info flex">
+                  <h3 class="accommodation-hotel-title text">
+                    Lagoona espa&ntilde;ola
+                  </h3>
+                  <span class="accommodation-address">
+                    Барселона, Испания
+                  </span>
+                  <a class="accommodation-rooms-link" href="#">
+                    Номера
+                  </a>
+                </div>
 
               </div>
             </article>
@@ -258,10 +264,12 @@
             <article class="accommodation-hotel">
               <img class="accommodation-hotel-image" src="img/Lagoona_son_tipicas.jpg" alt="Lagoona son típicas">
               <div class="accommodation-blog">
-                <div class="accommodation-price">
-                  <span class="accommindation-price-text">от</span>
-                  <span class="accommondation-price-cost">5148</span>
-                  <span class="text">/ ночь</span>
+                <div class="accommodation-price flex">
+                  <div class="accomondation-price-subject">
+                    <span class="accommindation-price-text accommindation-offset">от</span>
+                    <span class="accommondation-price-cost accommindation-offset">5148</span>
+                    <span class="text">/ ночь</span>
+                  </div>
                   <div class="accommondation-rating">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt="Rate 4 of 5 stars">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
@@ -270,15 +278,17 @@
                     <img class="accommondation-rating-star" src="img/star-empty.png" alt>
                   </div>
                 </div>
-                <h3 class="accommodation-hotel-title">
-                  Lagoona son t&iacute;picas
-                </h3>
-                <span class="accommodation-address">
-                  Барселона, Испания
-                </span>
-                <a class="accommodation-rooms-link" href="#">
-                  Номера
-                </a>
+                <div class="accomondation-hotel-info flex">
+                  <h3 class="accommodation-hotel-title text">
+                    Lagoona son t&iacute;picas
+                  </h3>
+                  <span class="accommodation-address">
+                    Барселона, Испания
+                  </span>
+                  <a class="accommodation-rooms-link" href="#">
+                    Номера
+                  </a>
+                </div>
 
               </div>
             </article>
@@ -288,10 +298,12 @@
             <article class="accommodation-hotel">
               <img class="accommodation-hotel-image" src="img/Lagoona_de_la_guerra.jpg" alt="Lagoona de la guerra">
               <div class="accommodation-blog">
-                <div class="accommodation-price">
-                  <span class="accommindation-price-text">от</span>
-                  <span class="accommondation-price-cost">6254</span>
-                  <span class="text">/ ночь</span>
+                <div class="accommodation-price flex">
+                  <div class="accomondation-price-subject">
+                    <span class="accommindation-price-text accommindation-offset">от</span>
+                    <span class="accommondation-price-cost accommindation-offset">6254</span>
+                    <span class="text">/ ночь</span>
+                  </div>
                   <div class="accommondation-rating">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt="Rate 5 of 5 stars">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
@@ -300,15 +312,17 @@
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
                   </div>
                 </div>
-                <h3 class="accommodation-hotel-title">
-                  Lagoona de&nbsp;la&nbsp;guerra
-                </h3>
-                <span class="accommodation-address">
-                  Барселона, Испания
-                </span>
-                <a class="accommodation-rooms-link" href="#">
-                  Номера
-                </a>
+                <div class="accomondation-hotel-info flex">
+                  <h3 class="accommodation-hotel-title text">
+                    Lagoona de&nbsp;la&nbsp;guerra
+                  </h3>
+                  <span class="accommodation-address">
+                    Барселона, Испания
+                  </span>
+                  <a class="accommodation-rooms-link" href="#">
+                    Номера
+                  </a>
+                </div>
 
               </div>
             </article>
@@ -318,10 +332,12 @@
             <article class="accommodation-hotel">
               <img class="accommodation-hotel-image" src="img/Lagoona_mentira_piadosa.jpg" alt="Lagoona mentira piadosa">
               <div class="accommodation-blog">
-                <div class="accommodation-price">
-                  <span class="accommindation-price-text">от</span>
-                  <span class="accommondation-price-cost">6320</span>
-                  <span class="text">/ ночь</span>
+                <div class="accommodation-price flex">
+                  <div class="accomondation-price-subject">
+                    <span class="accommindation-price-text accommindation-offset">от</span>
+                    <span class="accommondation-price-cost accommindation-offset">6320</span>
+                    <span class="text">/ ночь</span>
+                  </div>
                   <div class="accommondation-rating">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt="Rate 5 of 5 stars">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
@@ -330,15 +346,17 @@
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
                   </div>
                 </div>
-                <h3 class="accommodation-hotel-title">
-                  Lagoona mentira piadosa
-                </h3>
-                <span class="accommodation-address">
-                  Барселона, Испания
-                </span>
-                <a class="accommodation-rooms-link" href="#">
-                  Номера
-                </a>
+                <div class="accomondation-hotel-info flex">
+                  <h3 class="accommodation-hotel-title text">
+                    Lagoona mentira piadosa
+                  </h3>
+                  <span class="accommodation-address">
+                    Барселона, Испания
+                  </span>
+                  <a class="accommodation-rooms-link" href="#">
+                    Номера
+                  </a>
+                </div>
 
               </div>
             </article>
@@ -348,10 +366,12 @@
             <article class="accommodation-hotel">
               <img class="accommodation-hotel-image" src="img/Lagoona_empujar_la_creatividad.jpg" alt="Lagoona empujar la creatividad">
               <div class="accommodation-blog">
-                <div class="accommodation-price">
-                  <span class="accommindation-price-text">от</span>
-                  <span class="accommondation-price-cost">6457</span>
-                  <span class="text">/ ночь</span>
+                <div class="accommodation-price flex">
+                  <div class="accomondation-price-subject">
+                    <span class="accommindation-price-text accommindation-offset">от</span>
+                    <span class="accommondation-price-cost accommindation-offset">6457</span>
+                    <span class="text">/ ночь</span>
+                  </div>
                   <div class="accommondation-rating">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt="Rate 4 of 5 stars">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
@@ -360,15 +380,17 @@
                     <img class="accommondation-rating-star" src="img/star-empty.png" alt>
                   </div>
                 </div>
-                <h3 class="accommodation-hotel-title">
-                  Lagoona empujar la&nbsp;creatividad
-                </h3>
-                <span class="accommodation-address">
-                  Барселона, Испания
-                </span>
-                <a class="accommodation-rooms-link" href="#">
-                  Номера
-                </a>
+                <div class="accomondation-hotel-info flex">
+                  <h3 class="accommodation-hotel-title text">
+                    Lagoona empujar la&nbsp;creatividad
+                  </h3>
+                  <span class="accommodation-address">
+                    Барселона, Испания
+                  </span>
+                  <a class="accommodation-rooms-link" href="#">
+                    Номера
+                  </a>
+                </div>
 
               </div>
             </article>
@@ -378,10 +400,12 @@
             <article class="accommodation-hotel">
               <img class="accommodation-hotel-image" src="img/Lagoona_el_retorno.jpg" alt="Lagoona el retorno">
               <div class="accommodation-blog">
-                <div class="accommodation-price">
-                  <span class="accommindation-price-text">от</span>
-                  <span class="accommondation-price-cost">6320</span>
-                  <span class="text">/ ночь</span>
+                <div class="accommodation-price flex">
+                  <div class="accomondation-price-subject">
+                    <span class="accommindation-price-text accommindation-offset">от</span>
+                    <span class="accommondation-price-cost accommindation-offset">6320</span>
+                    <span class="text">/ ночь</span>
+                  </div>
                   <div class="accommondation-rating">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt="Rate 4 of 5 stars">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
@@ -390,15 +414,17 @@
                     <img class="accommondation-rating-star" src="img/star-empty.png" alt>
                   </div>
                 </div>
-                <h3 class="accommodation-hotel-title">
-                  Lagoona el&nbsp;retorno
-                </h3>
-                <span class="accommodation-address">
-                  Барселона, Испания
-                </span>
-                <a class="accommodation-rooms-link" href="#">
-                  Номера
-                </a>
+                <div class="accomondation-hotel-info flex">
+                  <h3 class="accommodation-hotel-title text">
+                    Lagoona el&nbsp;retorno
+                  </h3>
+                  <span class="accommodation-address">
+                    Барселона, Испания
+                  </span>
+                  <a class="accommodation-rooms-link" href="#">
+                    Номера
+                  </a>
+                </div>
 
               </div>
             </article>
@@ -408,10 +434,12 @@
             <article class="accommodation-hotel">
               <img class="accommodation-hotel-image" src="img/Lagoona_mentira_piadosa_2.jpg" alt="Lagoona mentira piadosa">
               <div class="accommodation-blog">
-                <div class="accommodation-price">
-                  <span class="accommindation-price-text">от</span>
-                  <span class="accommondation-price-cost">6505</span>
-                  <span class="text">/ ночь</span>
+                <div class="accommodation-price flex">
+                  <div class="accomondation-price-subject">
+                    <span class="accommindation-price-text accommindation-offset">от</span>
+                    <span class="accommondation-price-cost accommindation-offset">6505</span>
+                    <span class="text">/ ночь</span>
+                  </div>
                   <div class="accommondation-rating">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt="Rate 5 of 5 stars">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
@@ -420,15 +448,17 @@
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
                   </div>
                 </div>
-                <h3 class="accommodation-hotel-title">
-                  Lagoona mentira piadosa
-                </h3>
-                <span class="accommodation-address">
-                  Барселона, Испания
-                </span>
-                <a class="accommodation-rooms-link" href="#">
-                  Номера
-                </a>
+                <div class="accomondation-hotel-info flex">
+                  <h3 class="accommodation-hotel-title text">
+                    Lagoona mentira piadosa
+                  </h3>
+                  <span class="accommodation-address">
+                    Барселона, Испания
+                  </span>
+                  <a class="accommodation-rooms-link" href="#">
+                    Номера
+                  </a>
+                </div>
 
               </div>
             </article>
@@ -438,10 +468,12 @@
             <article class="accommodation-hotel">
               <img class="accommodation-hotel-image" src="img/Lagoona_suerte_siguio_siempre.jpg" alt="Lagoona suerte siguió siempre">
               <div class="accommodation-blog">
-                <div class="accommodation-price">
-                  <span class="accommindation-price-text">от</span>
-                  <span class="accommondation-price-cost">6824</span>
-                  <span class="text">/ ночь</span>
+                <div class="accommodation-price flex">
+                  <div class="accomondation-price-subject">
+                    <span class="accommindation-price-text accommindation-offset">от</span>
+                    <span class="accommondation-price-cost accommindation-offset">6824</span>
+                    <span class="text">/ ночь</span>
+                  </div>
                   <div class="accommondation-rating">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt="Rate 4 of 5 stars">
                     <img class="accommondation-rating-star" src="img/star-full.png" alt>
@@ -450,22 +482,24 @@
                     <img class="accommondation-rating-star" src="img/star-empty.png" alt>
                   </div>
                 </div>
-                <h3 class="accommodation-hotel-title">
-                  Lagoona suerte siguió siempre
-                </h3>
-                <span class="accommodation-city">
-                  Барселона, Испания
-                </span>
-                <a class="accommodation-rooms-link" href="#">
-                  Номера
-                </a>
+                <div class="accomondation-hotel-info flex">
+                  <h3 class="accommodation-hotel-title text">
+                    Lagoona suerte siguió siempre
+                  </h3>
+                  <span class="accommodation-address">
+                    Барселона, Испания
+                  </span>
+                  <a class="accommodation-rooms-link" href="#">
+                    Номера
+                  </a>
+                </div>
 
               </div>
             </article>
           </li>
 
-          <li class="accommodation-item accommodation-last-blog">
-            <a class="link-arrow accommodation-last-blog-link" href="#">
+          <li class="accommodation-item accommodation-last-blog flex">
+            <a class="accommodation-last-blog-link" href="#">
               Посмотреть все варианты
             </a>
 
@@ -473,12 +507,12 @@
         </ul>
       </div>
     </section>
-    <section class="tour-selection" id="tour-selection">
+    <section class="section-offset tour-selection" id="tour-selection">
       <div class="container">
         <h2>Хочу тур</h2>
       </div>
     </section>
-    <section class="contacts" id="contacts">
+    <section class="section-offset contacts" id="contacts">
       <div class="container">
         <h2>Контакты</h2>
       </div>
