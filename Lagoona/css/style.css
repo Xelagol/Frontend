@@ -708,6 +708,7 @@ body {
   margin-right: 125px;
   flex-direction: column;
   align-items: flex-start;
+  text-wrap: wrap;
 }
 
 .footer-left-copyright {
@@ -737,9 +738,10 @@ body {
 }
 
 .footer-center {
-  max-width: 360px;
+  max-width: 380px;
   flex-direction: column;
   align-items: flex-start;
+  text-wrap: wrap;
 }
 
 .footer-center-address {
