@@ -540,3 +540,248 @@ body {
   background-size: 11px 16px;
   background-repeat: no-repeat;
 }
+
+/* tour */
+
+.tour-selection {}
+
+.tour-block {
+  padding: 45px;
+  border-radius: 15px;
+  background: #E9E9E9;
+}
+
+.tour-title {
+  padding-left: 0;
+  color: #000;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.tour-constructor {
+  /* max-width: 865px; */
+  padding: 32px 28px;
+
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.tour-constructor-item {
+  width: 169px;
+  text-wrap: wrap;
+}
+
+.tour-constructor-item-number {
+  width: 121px;
+  text-wrap: wrap;
+}
+
+.tour-constructor-list {
+  max-width: 865px;
+  gap: 41px;
+
+  justify-content: space-between;
+}
+
+.tour-constructor-item-title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.tour-constructor-item-select {
+  width: 100%;
+  border: none;
+}
+
+
+.tour-constructor-item-option {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.tour-constructor-item-input-number {
+  max-width: 121px;
+  border: none;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+/* contacts */
+
+.contacts-part {
+  padding: 45px;
+  /* align-items: center; */
+  justify-content: space-between;
+  border-radius: 15px;
+  background: #FFF;
+}
+
+.contacts-column-left {
+  width: 374px;
+  margin-right: 53px;
+}
+
+.contacts-column-left-item {
+  padding-top: 25px;
+  padding-bottom: 23px;
+  /* text-align: left; */
+  justify-content: flex-start;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.contacts-column-left-title {
+  width: 98px;
+  margin-right: 47px;
+  display: inline-block;
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-wrap: wrap;
+  word-wrap: break-word;
+}
+
+.contacts-column-left-address {
+  display: inline-block;
+  max-width: 230px;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-wrap: wrap;
+}
+
+.contacts-column-left-link {
+  display: block;
+  color: #C93;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts-column-left-link-descr {
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.contacts-column-left-btn {
+  padding-top: 45px;
+}
+
+.contacts-column-right {
+  width: 653px;
+  height: 528px;
+  border-radius: 10px;
+}
+
+.contacts-column-right-img {
+  /* size: 100%; */
+}
+
+/* footer */
+
+.footer {
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.footer-block {
+  padding: 45px;
+  background: #333;
+  border-radius: 15px;
+  background-image: url(../img/footer-img.svg);
+  background-repeat: no-repeat;
+  background-position: 739px 100%;
+}
+
+.footer-left {
+  max-width: 302px;
+  margin-right: 125px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-left-copyright {
+  margin-bottom: 37px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%;
+}
+
+.footer-left-text {
+  margin-bottom: 40px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%;
+}
+
+.footer-left-agreement {
+  color: #C93;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.footer-center {
+  max-width: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-center-address {
+  margin-bottom: 15px;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.footer-center-phones {
+  margin-bottom: 15px;
+}
+
+.footer-right {
+  margin-left: auto;
+ }
+
+ .footer-right-social-list {
+  flex-direction: column;
+  align-items: center;
+ }
+
+.footer-social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footer-social-link-tripadv {
+  background-image: url(../img/tripadv.svg);
+}
+
+.footer-social-link-ok {
+  background-image: url(../img/ok.svg);
+}
+
+.footer-social-link-vk {
+  background-image: url(../img/vk.svg);
+}
