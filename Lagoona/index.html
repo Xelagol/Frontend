@@ -513,29 +513,29 @@
             <div class="tour-constructor flex">
               <div class="tour-constructor-list flex">
                 <div class="tour-constructor-item">
-                  <h4 class="tour-constructor-item-title">Город вылета</h4>
+                  <span class="tour-constructor-item-title">Город вылета</span>
                   <select class="tour-constructor-item-select" id name="departure city" required>
                     <option class="tour-constructor-item-option" value="Город вылета" disabled selected>Город вылета</option>
                     <option class="tour-constructor-item-option" value="Санкт-Петербург">Санкт-Петербург</option>
                   </select>
                 </div>
                 <div class="tour-constructor-item">
-                  <h4 class="tour-constructor-item-title">Страна</h4>
+                  <span class="tour-constructor-item-title">Страна</span>
                   <select class="tour-constructor-item-select" id name="country" required>
                     <option class="tour-constructor-item-option" value="Страна" disabled selected>Страна</option>
                     <option class="tour-constructor-item-option" value="Австралия">Австралия</option>
                   </select>
                 </div>
                 <div class="tour-constructor-item-number">
-                  <h4 class="tour-constructor-item-title">Дата прибытия</h4>
-                  <input class="tour-constructor-item-input-number" type="date" required>
+                  <span class="tour-constructor-item-title">Дата прибытия</span>
+                  <input class="tour-constructor-item-input-number" type="date" name="arrival date" required>
                 </div>
                 <div class="tour-constructor-item-number">
-                  <h4 class="tour-constructor-item-title">Ночей</h4>
+                  <span class="tour-constructor-item-title">Ночей</span>
                   <input class="tour-constructor-item-input-number" type="number" name="number of nights" min="1" required>
                 </div>
                 <div class="tour-constructor-item-number">
-                  <h4 class="tour-constructor-item-title">Туристы</h4>
+                  <span class="tour-constructor-item-title">Туристы</span>
                   <input class="tour-constructor-item-input-number" type="number" name="number of tourists" min="1" required>
                 </div>
               </div>
@@ -552,54 +552,55 @@
       <div class="container">
         <h2 class="section-title contacts-title">Контакты</h2>
         <div class="contacts-part flex">
-          <div class="contacts-column-left">
-
-            <div class="contacts-column-left-item flex">
-              <strong class="contacts-column-left-title">Адресс</strong>
-              <address class="contacts-column-left-address">
-                Москва, улица Юности, дом 5, строение 4, офис2
-              </address>
-            </div>
-            <div class="contacts-column-left-item flex">
-              <strong class="contacts-column-left-title">Телефоны</strong>
-              <address class="contacts-column-left-address">
-                <a class="contacts-column-left-link" href="tel:+74995356434">
-                  +7 499 535-64-34
-                </a>
-                <a class="contacts-column-left-link" href="tel:+74950050544">
-                  +7 495 005-05-44
-                </a>
-              </address>
-            </div>
-            <div class="contacts-column-left-item flex">
-              <strong class="contacts-column-left-title">Email</strong>
-              <address class="contacts-column-left-address">
-                <a class="contacts-column-left-link" href="mailto:lg.oona@mail.ru">
-                  lg.oona@mail.ru
-                </a>
-                <span class="contacts-column-left-link-descr">
-                  по&nbsp;вопросам бронирования
+          <address class="contacts-column-left">
+            <ul class="list-reset contacts-column-left-list">
+              <li class="contacts-column-left-item flex">
+                <strong class="contacts-column-left-title">Адресс</strong>
+                <p class="text contacts-column-left-address">
+                  Москва, улица Юности, дом 5, строение 4, офис2
+                </p>
+              </li>
+              <li class="contacts-column-left-item flex">
+                <strong class="contacts-column-left-title">Телефоны</strong>
+                <div class="contacts-column-left-address">
+                  <a class="contacts-column-left-link" href="tel:+74995356434">
+                    +7 499 535-64-34
+                  </a>
+                  <a class="contacts-column-left-link" href="tel:+74950050544">
+                    +7 495 005-05-44
+                  </a>
+                </div>
+              </li>
+              <li class="contacts-column-left-item flex">
+                <strong class="contacts-column-left-title">Email</strong>
+                <div class="contacts-column-left-address">
+                  <a class="contacts-column-left-link" href="mailto:lg.oona@mail.ru">
+                    lg.oona@mail.ru
+                  </a>
+                  <span class="contacts-column-left-link-descr">
+                    по&nbsp;вопросам бронирования
+                  </span>
+                  <a class="contacts-column-left-link" href="mailto:hotels.ln@mail.ru">
+                    hotels.ln@mail.ru
+                  </a>
+                  <span class="contacts-column-left-link-descr">
+                    по&nbsp;вопросам сотрудничества
+                  </span>
+                </div>
+              </li>
+              <li class="contacts-column-left-item flex">
+                <strong class="contacts-column-left-title">График</strong>
+                <span class="contacts-column-left-address">
+                  Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00
                 </span>
-                <a class="contacts-column-left-link" href="mailto:hotels.ln@mail.ru">
-                  hotels.ln@mail.ru
-                </a>
-                <span class="contacts-column-left-link-descr">
-                  по&nbsp;вопросам сотрудничества
-                </span>
-              </address>
-            </div>
-            <div class="contacts-column-left-item flex">
-              <strong class="contacts-column-left-title">График</strong>
-              <span class="contacts-column-left-address">
-                Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00
-              </span>
-            </div>
+              </li>
+            </ul>
             <div class="contacts-column-left-btn">
               <button class="button btn-reset contacts-column-left-btn-route">
                 Построить маршрут
               </button>
             </div>
-          </div>
+          </address>
           <div class="contacts-column-right overflow-hidden">
             <img class="contacts-column-right-img" src="./img/contacts.jpg" alt="Фотография ресепшн">
           </div>
@@ -621,40 +622,37 @@
           <a href="" class="list-reset footer-left-agreement">Пользовательское соглашение</a>
         </div>
 
-        <div class="footer-center flex">
-          <address class="footer-center-address">
+        <address class="footer-center flex">
+          <p class="text footer-center-address">
             Москва, улица Юности, дом 5, строение 4, офис 2
-          </address>
+          </p>
           <div class="footer-center-phones">
-            <address class="contacts-column-left-address">
-              <a class="contacts-column-left-link" href="tel:+74995356434">
-                +7 499 535-64-34
-              </a>
-              <a class="contacts-column-left-link" href="tel:+74950050544">
-                +7 495 005-05-44
-              </a>
-            </address>
+            <a class="footer-center-link" href="tel:+74995356434">
+              +7 499 535-64-34
+            </a>
+            <a class="footer-center-link" href="tel:+74950050544">
+              +7 495 005-05-44
+            </a>
           </div>
           <div class="footer-center-email">
-            <address class="contacts-column-left-address">
-              <a class="contacts-column-left-link" href="mailto:lg.oona@mail.ru">
+            <!-- <div class="contacts-column-left-address"> -->
+              <a class="footer-center-link" href="mailto:lg.oona@mail.ru">
                 lg.oona@mail.ru
               </a>
-              <a class="contacts-column-left-link" href="mailto:hotels.ln@mail.ru">
+              <a class="footer-center-link" href="mailto:hotels.ln@mail.ru">
                 hotels.ln@mail.ru
               </a>
-            </address>
+            <!-- </div> -->
           </div>
-        </div>
+
+        </address>
 
         <div class="footer-right">
-
-            <ul class="footer-right-social-list list-reset flex">
-              <li class="footer-social-item"><a class="footer-social-link footer-social-link-tripadv" href="#" target="_blank"></a></li>
-              <li class="footer-social-item"><a class="footer-social-link footer-social-link-ok" href="#" target="_blank"></a></li>
-              <li class="footer-social-item"><a class="footer-social-link footer-social-link-vk" href="#" target="_blank"></a></li>
-            </ul>
-
+          <ul class="footer-right-social-list list-reset flex">
+            <li class="footer-social-item"><a class="footer-social-link footer-social-link-tripadv" href="#" target="_blank"></a></li>
+            <li class="footer-social-item"><a class="footer-social-link footer-social-link-ok" href="#" target="_blank"></a></li>
+            <li class="footer-social-item"><a class="footer-social-link footer-social-link-vk" href="#" target="_blank"></a></li>
+          </ul>
         </div>
       </div>
     </div>
