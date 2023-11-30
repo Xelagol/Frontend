@@ -514,29 +514,29 @@
               <div class="tour-constructor-list flex">
                 <div class="tour-constructor-item">
                   <span class="tour-constructor-item-title">Город вылета</span>
-                  <select class="tour-constructor-item-select" id name="departure city" required>
+                  <select class="tour-constructor-item-select" name="departure_city" required>
                     <option class="tour-constructor-item-option" value="Город вылета" disabled selected>Город вылета</option>
                     <option class="tour-constructor-item-option" value="Санкт-Петербург">Санкт-Петербург</option>
                   </select>
                 </div>
                 <div class="tour-constructor-item">
                   <span class="tour-constructor-item-title">Страна</span>
-                  <select class="tour-constructor-item-select" id name="country" required>
+                  <select class="tour-constructor-item-select" name="country" required>
                     <option class="tour-constructor-item-option" value="Страна" disabled selected>Страна</option>
                     <option class="tour-constructor-item-option" value="Австралия">Австралия</option>
                   </select>
                 </div>
                 <div class="tour-constructor-item-number">
                   <span class="tour-constructor-item-title">Дата прибытия</span>
-                  <input class="tour-constructor-item-input-number" type="date" name="arrival date" required>
+                  <input class="tour-constructor-item-input-number" type="date" name="arrival_date" required>
                 </div>
                 <div class="tour-constructor-item-number">
                   <span class="tour-constructor-item-title">Ночей</span>
-                  <input class="tour-constructor-item-input-number" type="number" name="number of nights" min="1" required>
+                  <input class="tour-constructor-item-input-number" type="number" name="number_of_nights" min="1" required>
                 </div>
                 <div class="tour-constructor-item-number">
                   <span class="tour-constructor-item-title">Туристы</span>
-                  <input class="tour-constructor-item-input-number" type="number" name="number of tourists" min="1" required>
+                  <input class="tour-constructor-item-input-number" type="number" name="number_of_tourists" min="1" required>
                 </div>
               </div>
               <div class="tour-constructor-list-submit">
@@ -555,13 +555,13 @@
           <address class="contacts-column-left">
             <ul class="list-reset contacts-column-left-list">
               <li class="contacts-column-left-item flex">
-                <strong class="contacts-column-left-title">Адресс</strong>
+                <b class="contacts-column-left-title">Адресс</b>
                 <p class="text contacts-column-left-address">
                   Москва, улица Юности, дом 5, строение 4, офис2
                 </p>
               </li>
               <li class="contacts-column-left-item flex">
-                <strong class="contacts-column-left-title">Телефоны</strong>
+                <b class="contacts-column-left-title">Телефоны</b>
                 <div class="contacts-column-left-address">
                   <a class="contacts-column-left-link" href="tel:+74995356434">
                     +7 499 535-64-34
@@ -572,7 +572,7 @@
                 </div>
               </li>
               <li class="contacts-column-left-item flex">
-                <strong class="contacts-column-left-title">Email</strong>
+                <b class="contacts-column-left-title">Email</b>
                 <div class="contacts-column-left-address">
                   <a class="contacts-column-left-link" href="mailto:lg.oona@mail.ru">
                     lg.oona@mail.ru
@@ -589,7 +589,7 @@
                 </div>
               </li>
               <li class="contacts-column-left-item flex">
-                <strong class="contacts-column-left-title">График</strong>
+                <b class="contacts-column-left-title">График</b>
                 <span class="contacts-column-left-address">
                   Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00
                 </span>
@@ -626,7 +626,7 @@
           <p class="text footer-center-address">
             Москва, улица Юности, дом 5, строение 4, офис 2
           </p>
-          <div class="footer-center-phones">
+          <div class="footer-center-phones flex fd-column">
             <a class="footer-center-link" href="tel:+74995356434">
               +7 499 535-64-34
             </a>
@@ -634,24 +634,31 @@
               +7 495 005-05-44
             </a>
           </div>
-          <div class="footer-center-email">
-            <!-- <div class="contacts-column-left-address"> -->
+          <div class="footer-center-email flex fd-column">
               <a class="footer-center-link" href="mailto:lg.oona@mail.ru">
                 lg.oona@mail.ru
               </a>
               <a class="footer-center-link" href="mailto:hotels.ln@mail.ru">
                 hotels.ln@mail.ru
               </a>
-            <!-- </div> -->
           </div>
 
         </address>
 
         <div class="footer-right">
           <ul class="footer-right-social-list list-reset flex">
-            <li class="footer-social-item"><a class="footer-social-link footer-social-link-tripadv" href="#" target="_blank"></a></li>
-            <li class="footer-social-item"><a class="footer-social-link footer-social-link-ok" href="#" target="_blank"></a></li>
-            <li class="footer-social-item"><a class="footer-social-link footer-social-link-vk" href="#" target="_blank"></a></li>
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-link-tripadv" href="#" target="_blank">
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-link-ok" href="#" target="_blank">
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="footer-social-link footer-social-link-vk" href="#" target="_blank">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
