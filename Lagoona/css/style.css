@@ -15,6 +15,7 @@ html {
   --btn-bg-act: #A47312;
   --link-color: #C93;
   --link-color-foc: #C93;
+  --link-color-gray-hov: #C93;
   --link-color-hov: #F0BF5F;
   --link-color-act: #A47312;
   --outline-color: #C93;
@@ -157,7 +158,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  text-wrap: wrap;
+  text-align: center;
   word-break: break-word;
   transition-property: color, background-color;
   transition-duration: .3s;
@@ -206,8 +207,7 @@ body {
 .header-contacts {
   max-width: 709px;
   width: 100%;
-  flex-grow: 1;
-
+  margin-right: 40px;
 }
 
 .header-phone-link {
@@ -229,7 +229,7 @@ body {
 }
 
 .header-phone-link:hover {
-  color: var(--link-color-hov);
+  color: var(--link-color-gray-hov);
 }
 
 .header-phone-link:active {
@@ -329,7 +329,7 @@ body {
 }
 
 .header-link:hover {
-  color: var(--link-color-hov);
+  color: var(--link-color-gray-hov);
 }
 
 .header-link:active {
@@ -573,7 +573,7 @@ body {
 }
 
 .services-item-blog-link:hover {
-  color:var(--link-color-hov);
+  color: var(--link-color-hov);
 }
 
 .services-item-blog-link:hover svg {
@@ -736,15 +736,17 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  background-color: #666;
   background-image: url(../img/hotel-show-more.jpg);
   background-position: left top;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .accommodation-last-blog-link {
-  min-width: 265px;
+  /* min-width: 265px;
   max-height: 380px;
-  overflow: hidden;
+  overflow: hidden; */
   justify-content: flex-start;
   align-items: center;
   color: #FFF;
@@ -766,6 +768,9 @@ body {
 
 .accommodation-last-blog-link svg {
   stroke: #FFF;
+  transition-property: stroke;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .accommodation-last-blog-link-text {
@@ -830,7 +835,6 @@ body {
 
 .tour-constructor-item {
   width: 169px;
-  text-wrap: wrap;
 }
 
 /* .tour-constructor-item:focus-within {
@@ -840,7 +844,6 @@ body {
 
 .tour-constructor-item-number {
   width: 121px;
-  text-wrap: wrap;
 }
 
 .tour-constructor-list {
@@ -875,7 +878,7 @@ body {
 }
 
 .tour-constructor-item-select:hover {
-  color: var(--link-color-hov) ;
+  color: var(--link-color-hov);
 }
 
 .tour-constructor-item-select:active {
@@ -944,23 +947,22 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  text-wrap: wrap;
   word-wrap: break-word;
 }
 
 .contacts-column-left-address {
-  display: inline-block;
+  flex-direction: column;
+  align-items: flex-start;
   max-width: 230px;
   color: #000;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  text-wrap: wrap;
 }
 
 .contacts-column-left-link {
-  display: block;
+
   color: #C93;
   transition-property: color;
   transition-duration: .3s;
@@ -1022,7 +1024,6 @@ body {
   margin-right: 125px;
   flex-direction: column;
   align-items: flex-start;
-  text-wrap: wrap;
 }
 
 .footer-left-copyright {
@@ -1073,7 +1074,6 @@ body {
   max-width: 380px;
   flex-direction: column;
   align-items: flex-start;
-  text-wrap: wrap;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1141,7 +1141,6 @@ body {
 
 .footer-social-link:focus svg {
   outline-offset: 2px;
-  outline: 1px solid var(--outline-color-foc);
   fill: var(--fill-foc);
 }
 
@@ -1150,6 +1149,5 @@ body {
 }
 
 .footer-social-link:active svg {
-  outline: none;
   fill: var(--fill-act);
 }
