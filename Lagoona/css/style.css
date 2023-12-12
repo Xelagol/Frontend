@@ -459,7 +459,7 @@ body {
   padding-bottom: 40px;
   justify-content: end;
   flex-direction: column;
-  background: url(../img/special-hotel-room.jpg);
+  background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0.00) 65.7%), url(../img/special-hotel-room.jpg);
   background-position: left top;
   background-size: cover;
   border-radius: 15px;
