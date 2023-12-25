@@ -1,0 +1,339 @@
+html {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --hero-gap: 15px;
+  --services-gap: 50px;
+
+  --link-bg-color: ;
+  --link-bg-foc-hov-color: ;
+  --link-bg-active-color: ;
+
+  --link-border-color: ;
+  --link-color: ;
+  --btn-color: ;
+  --btn-bg-color: ;
+  --btn-bg-color-foc-hov: ;
+  --btn-bg-color-active: ;
+  --logo-text-footer: ;
+  --logo-text-header: ;
+  --nav-link-outline-focus: ;
+
+  --nav-link-after-hover: ;
+  --nav-link-after-active: ;
+  --nav-link-color-active: ;
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/MontserratRegular.eot');
+  src: local('Montserrat-Regular'), local('Montserrat Regular'),
+    url('../fonts/MontserratRegular.woff2') format('woff2'),
+    url('../fonts/MontserratRegular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/MontserratSemiBold.eot');
+  src: local('Montserrat-SemiBold'), local('Montserrat SemiBold'),
+    url('../fonts/MontserratSemiBold.woff2') format('woff2'),
+    url('../fonts/MontserratSemiBold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/MontserratBold.eot');
+  src: local('MontserratBold'), local('Montserrat Bold'),
+    url('../fonts/MontserratBold.woff2') format('woff2'),
+    url('../fonts/MontserratBold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/MontserratExtraBold.eot');
+  src: local('Montserrat-ExtraBold'), local('Montserrat ExtraBold'),
+    url('../fonts/MontserratExtraBold.woff2') format('woff2'),
+    url('../fonts/MontserratExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1950px;
+  font-family: 'Montserrat', sans-serif;
+  color: #4b8aab;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.section-offsets {
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.text {
+  margin: 0;
+}
+
+.container {
+  max-width: 1950px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 26px 39px;
+  border-radius: 16px;
+  text-align: center;
+  background-color: #03878b;
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color;
+  transition-duration: .3s;
+}
+
+.btn:hover {
+  background-color: #047da8;
+}
+
+/* hero */
+
+.hero__body {
+  background: rgb(187, 224, 230);
+  background: linear-gradient(90deg, rgba(187, 224, 230, 0) 0%, rgba(187, 224, 230, 1) 9%, rgba(187, 224, 230, 0) 11%, rgba(187, 224, 230, 0) 72%, rgba(187, 224, 230, 1) 72%, rgba(255, 255, 255, 1) 91%), url(../img//main-logo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 25%;
+}
+
+.hero__top-bar {
+  min-height: 600px;
+  height: 100%;
+  padding: 15px;
+  padding-left: 30px;
+  justify-content: space-between;
+}
+
+.hero__logo {
+  max-width: 300px;
+  margin-right: 50px;
+}
+
+.hero__right-bar {
+  max-width: 500px;
+  padding: 10px;
+  gap: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__phone {
+  padding-top: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 3px 3px 10px #bbe0e6;
+}
+
+.hero-title {
+  font-size: 80px;
+  font-weight: 800;
+  text-shadow: 5px 5px 10px #bbe0e6;
+}
+
+.services__list-top {
+  gap: 50px;
+  flex-wrap: wrap;
+  --services-list-top-offset: 2;
+}
+
+.services__list-bottom {
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  --services-list-bottom-offset: 1;
+}
+
+.services__item {
+  min-height: 250px;
+  padding-top: 200px;
+  background-position: center;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  /* border: 1px solid red; */
+}
+
+.services__item-top {
+  width: calc((100% - var(--services-list-top-offset) * var(--services-gap)) / (var(--services-list-top-offset) + 1));
+}
+
+.services__item-bottom {
+  width: calc((66% - var(--services-list-bottom-offset) * var(--services-gap)) / (var(--services-list-bottom-offset) + 1));
+}
+
+.services__item_img1 {
+  background-image: url(../img/inet.png);
+}
+
+.services__item_img2 {
+  background-image: url(../img/cloud.png);
+}
+
+.services__item_img3 {
+  background-image: url(../img/kanal.png);
+}
+
+.services__item_img4 {
+  background-image: url(../img/opto.png);
+}
+
+.services__item_img5 {
+  background-image: url(../img/l2l3.png);
+}
+
+.services__text {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* contact-us */
+
+.contact-us {
+  margin-bottom: 100px;
+}
+
+.contact-us__title {
+  margin-bottom: 25px;
+  padding-top: 50px;
+  padding-left: 60px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.contact-us__form {
+  padding: 45px;
+  max-width: 1820px;
+  justify-content: space-between;
+}
+
+.form__input-body {
+  display: inline-block;
+  margin-right: 300px;
+}
+
+.contact-us__form-input {
+  padding: 15px;
+  max-width: 400px;
+  border: none;
+  border-bottom: 5px solid #047da8;
+  color: #047da8;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.contact-us__form-input:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-us__form_input::placeholder {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.contact-us__form-input:focus-visible {
+  outline: none;
+}
+
+
+.contact-us__accept {
+  padding: 45px;
+  font-size: 25px;
+}
+
+.contact-us__agreement {
+  font-weight: 800;
+}
+
+.contact-us__chekbox {
+  margin-right: 10px;
+  transform: scale(1.83);
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* footer  */
+
+.footer__body {
+  padding: 25px;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.footer__left {
+  max-width: 750px;
+
+}
+
+.footer__agreement-cookies {
+  font-size: 20px;
+}
+
+.footer__phone {
+  font-size: 80px;
+  font-weight: 800;
+  text-shadow: 10px 10px 15px #bbe0e6;
+}
