@@ -12,7 +12,7 @@
 
 <body>
   <header class="header">
-    <div class="container container_header-footer">
+    <div class="container header__container">
       <div class="header__logo-nav flex">
         <a class="header__logo-link">
           <img class="header__logo" src="./img/Logo-Euclid.png" alt="Логотип Евклид">
@@ -115,7 +115,7 @@
             <p class="stages__text text">Влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума<br> над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.<br>
               А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.
             </p>
-            <div class="stages__links">
+            <div class="stages__links flex">
               <a class="stages__details link" href="#">
                 Подробнее
               </a>
@@ -169,7 +169,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container container_header-footer">
+    <div class="container footer__container">
       <div class="footer__body flex">
         <div class="footer__left-column flex">
           <div class="footer__logo logo flex">
@@ -212,7 +212,7 @@
               </a>
             </li>
           </ul>
-          <div class="footer__social">
+          <div class="footer__social flex">
             <a class="social" href="#" target="_blank">
               <svg class="social__ok" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M25.7054 19.9812C25.7054 22.4546 27.7105 24.4598 30.1838 24.4598C32.6572 24.4598 34.6623 22.4546 34.6623 19.9812C34.6623 17.5079 32.6572 15.5028 30.1838 15.5028C27.7105 15.5028 25.7054 17.5079 25.7054 19.9812Z"></path>
@@ -234,13 +234,17 @@
             <input class="footer__input" name="name" type="text" placeholder="Фамилия, имя и отчество*" required>
             <input class="footer__input" name="e-mail" type="email" placeholder="Email*" required>
             <textarea class="footer__input footer__text-area" name="message" placeholder="Сообщение"></textarea>
-          </div>
-          <div class="footer__btn-accept">
-            <button class="footer__btn btn">Отправить данные</button>
-            <label class="footer__accept">
-              <input type="checkbox">
-              Согласен на обработку данных
-            </label>
+            <div class="footer__btn-accept flex">
+              <button class="footer__btn btn">Отправить данные</button>
+              <label class="footer__accept">
+                <input class="visually-hidden footer__checkbox" type="checkbox">
+                <span class="footer__visible-checkbox">
+                </span>
+                <span class="footer__checkbox-text">
+                  Согласен на обработку данных
+                </span>
+              </label>
+            </div>
           </div>
         </div>
         <div class="footer__right-column flex">

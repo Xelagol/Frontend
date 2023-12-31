@@ -717,7 +717,7 @@ body {
 /* footer */
 
 .footer {
-  margin: 45px 0;
+padding-top: 72px;
 }
 
 .footer-container {
